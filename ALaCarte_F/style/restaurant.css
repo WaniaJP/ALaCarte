@@ -1,0 +1,60 @@
+
+
+.bloc-commentaires{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.commentaire{
+    border-color: var(--marron);    
+}
+
+textarea{
+    resize: none;
+    border-color: var(--dark_green);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+textarea:invalid {
+    border: 2px dashed var(--orange);
+  }
+  
+  textarea:valid {
+    border: 2px solid var(--beige);
+  }
+
+#bloc-new-com form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note-resto{
+    width: clamp(150px, 5.5vw, 250px);;
+}
+
+.note-resto img{
+    width: 100%;
+}
+
+#bloc-info-resto{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number-com{
+    text-align: center;
+}
+
+
+input.number-com:invalid {
+    border: 2px dashed var(--orange);
+  }
+  
+  input.number-com:valid {
+    border: 2px solid var(--beige);
+  }

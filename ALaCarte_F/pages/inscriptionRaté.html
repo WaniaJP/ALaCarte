@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../style/style.css">
+        <link rel="stylesheet" type="text/css" href="../style/inscription.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inscription</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster+Two">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    </head>
+    <body>
+        <div class="container">
+            <form method = "POST" action="../php/validationInscription.php">
+                <div class ="container-contenu"> 
+                    <h4 class="text-marron">Inscription</h5><br>
+                        <h5 class="text-marron">Vous êtes déjà un utilisateur ? </h5><a class="lien text-marron" href="connexion.html"><h6>Se connecter</h6></a></p><br><br>
+                        <div class="formulaire">
+                            <input class="text-marron input" type="text" id="pseudo" min="7" maxlength="50" required name="pseudo" placeholder = " Pseudonyme : 7 caractères min"><br>
+                            <input class="text-marron input" type="email" id="email" min="7" maxlength="50" required name="email" placeholder = " Adresse e-mail"><br>
+                            <input class="text-marron input" type="password" id="password" min="7" maxlength="50" required name="password" placeholder = " Mot de passe : 7 caractères min"><br>
+                            <input class="text-marron input" type="password" id="password2" min="7" maxlength="50" required name = "password2" placeholder = " Confirmation Mot de passe"> 
+                        </div>                    
+                    <span id = "msgerror"></span><br><br>
+
+                    <div class="envoyer">
+                        <input class="text-marron small-button" type="submit" min="7" maxlength="50" required name="envoyer" value="Suivant">
+                    </div>
+                </div>
+            </form>
+            <button class="small-button text-marron"><a class="lien text-marron" href="./../pages/accueilNC.html">Retour</a></button>
+        </div>
+        <script src="../js/inscriptionFailed.js"></script>
+    </body>
+</html>

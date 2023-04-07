@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+  <script src="http://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Lobster+Two">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Solway">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Dosis">
+  <script src="./../js/cartePreview.js"></script>
+  <link rel="stylesheet" type="text/css" href="./../style/style.css">
+  <link rel="stylesheet" type="text/css" href="./../style/carte.css">
+  <style>
+    .legend{
+      display: none;
+    }
+  </style>
+  <title>A la Carte</title>
+
+  <style>
+    
+  </style>
+
+</head>
+<body>
+  <div class="test">
+    <div id="bloc">
+      <div class="sidebar">
+        <div class="lancerRecherche">
+          <input type="text" id="fsearch" name="fsearch" placeholder="aliments, catégorie ou spécialité" value="">
+          <input type="button" id="search" name="button" value=">">
+        </div>
+        <div id="bloc-categorie">
+          <div class="rechercheCat1">
+            <button class="rechercher" name="french">Français</button>
+            <button class="rechercher" name="italian">Italien</button>
+            <button class="rechercher" name="mexican">Mexicain</button>
+            <button class="rechercher" name="chinese">Chinois</button>
+            <button class="rechercher" name="japanese">Japonais</button>
+            <button class="rechercher" name="indian">Indien</button>
+            <button class="rechercher" name="american">Américain</button>
+          </div>
+  
+          <div class="rechercheCat2">
+            <button class="rechercher" name="sushi">Sushi</button>
+            <button class="rechercher" name="street food">Street food</button>
+            <button class="rechercher" name="icecream">Glace</button>
+            <button class="rechercher" name="sandwich">Sandwich</button>
+            <button class="rechercher" name="pizza">Pizza</button>
+            <button class="rechercher" name="hamburger">Hamburger</button>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="bloc2">
+      <button class="leave">Quitter le mode route</button>
+    </div>
+
+
+  </div>
+    
+    <div id="map" class="map">
+      
+  </div>
+    
+    
+</body>
+</html>

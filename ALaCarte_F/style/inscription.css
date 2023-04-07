@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.input{
+    padding: clamp(20px, 2vw, 30px);
+    border-radius: 20px;
+    border-color: var(--marron);
+  
+    font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 600;
+      font-size: clamp(20px, 2vw, 30px)
+  }
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+
+body{
+    background : var(--light_blue);
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background: white;
+    padding : 48px;
+    height : fit-content;
+    border-radius: 20px;
+    border: 2px solid var(--marron);
+    box-shadow: 5px 5px 0px var(--marron);
+}
+
+input[type="submit"]{
+    cursor:pointer;
+    padding:7px;
+}
+
+input[type="text"]{
+    width:24rem;
+}
+
+input[type="password"]{
+    width:24rem;
+}
+
+.envoyer{
+    display: flex;
+    justify-content: flex-end;
+}

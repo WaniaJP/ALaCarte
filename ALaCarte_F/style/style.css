@@ -1,0 +1,452 @@
+:root {
+    /*Couleurs*/
+    --orange: #F3471E;
+    --beige: #FCF9EB;
+    --marron: #41240F;
+    --light_green: #BBCB9D;
+    --dark_green: #4D5839;
+    --light_blue: #BDD3D3;
+    --dark_blue: #3B5454;
+    --white: #FFFFFF;
+    --black: #000;
+    --none: #424242;
+
+
+    /*Polices*/
+    --lien: "100vw Solway normal";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bloc-orange {
+    background-color: var(--orange);
+}
+
+.bloc-beige {
+    background-color: var(--beige);
+}
+
+.bloc-marron {
+    background-color: var(--marron);
+}
+
+.bloc-vert {
+    background-color: var(--light_green);
+}
+
+.bloc-vert-f {
+    background-color: var(--dark_green);
+}
+
+.bloc-bleu {
+    background-color: var(--light_blue);
+}
+
+.bloc-bleu-f {
+    background-color: var(--dark_blue);
+}
+
+.bloc-blanc {
+    background-color: var(--white);
+}
+
+.bloc-noir {
+    background-color: var(--black);
+}
+
+
+
+/************* Text Color *************/
+
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-beige {
+    color: var(--beige);
+}
+
+.text-marron {
+    color: var(--marron);
+}
+
+.text-vert {
+    color: var(--light_green);
+}
+
+.text-vert-f {
+    color: var(--dark_green);
+}
+
+.text-bleu {
+    color: var(--light_blue);
+}
+
+.text-bleu-f {
+    color: var(--dark_blue);
+}
+
+.text-blanc {
+    color: var(--white);
+}
+
+.text-noir {
+    color: var(--black);
+}
+
+/**************************************************/
+
+h1 {
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(60px,15vw,110px);
+}
+
+h2 {
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(50px,10vw,80px);
+}
+
+h3 {
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(18px,6vw,45px);
+}
+
+h4 {
+    font-family: 'Lobster Two';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(30px,5vw,50px);
+}
+
+h5 {
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(15px,4vw,25px);
+}
+
+h6 {
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px,3vw,22px);
+}
+
+.corps-basic {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(20px, 2vw, 45px);
+}
+
+/****** Commentaires ******/
+.commentaire{
+    border-width: 2px 0px;
+    border-style: solid;
+    padding: clamp(15px, 3vw, 25px) clamp(15px, 4vw, 25px);
+    width: clamp(300px,50vw,800px);
+
+}
+
+.nom-user-com{
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px,3.5vw,24px);
+}
+
+.id-user-com{
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14px,3vw,22px);
+}
+
+.user-info-com{
+    margin-bottom: clamp(15px, 1vw, 25px);
+}
+
+.corps-com {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(15px, 1.5vw, 20px);
+    margin-bottom: clamp(15px, 1vw, 25px);
+}
+
+.corps-script {
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(20px, 1.75vw, 35px);
+    margin-bottom: clamp(15px, 1vw, 25px);
+}
+
+.note-com{
+    width: clamp(150px, 5.5vw, 250px);;
+}
+
+.note-com img{
+    width: 100%;
+}
+
+/*********************************************/
+
+/********************** Lien **********************/
+
+.lien {
+    font-family: Solway, Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(15px, 1.5vw, 25px);
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.lien {
+    text-decoration: none;
+}
+
+nav ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: var(--marron);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li.text-orange::after {
+    background: var(--orange);
+}
+
+nav ul li.text-beige::after {
+    background: var(--beige);
+}
+
+nav ul li.text-marron::after {
+    background: var(--marron);
+}
+
+nav ul li.text-vert::after {
+    background: var(--light_green);
+}
+
+nav ul li.text-vert-f::after {
+    background: var(--dark_green);
+}
+
+nav ul li.text-bleu::after {
+    background: var(--light_blue);
+}
+
+nav ul li.text-bleu-f::after {
+    background: var(--dark_blue);
+}
+
+nav ul li.text-blanc::after {
+    background: var(--white);
+}
+
+nav ul li.text-noir::after {
+    background: var(--black);
+}
+
+/**************************************************/
+
+
+
+/******** Header Navigation ********/
+
+header nav {
+    padding: clamp(15px, 2vw, 18px);
+    padding-right: 0px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/**************************************************/
+
+
+
+/******** Footer Navigation ********/
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-reseau {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-reseau .logo-reseau {
+    padding: clamp(5px, 3vw, 25px);
+}
+
+/**************************************************/
+
+
+
+/****** Logo animation *****/
+
+.logo:hover, a:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/**************************************************/
+
+
+.bloc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(30px, 8vw, 200px) 0px;
+}
+
+/***** Button *****/
+.button {
+    padding: clamp(5px, 1.5vw, 15px) clamp(10px, 1.75vw, 35px);
+
+    border: 2px solid;
+
+    border-radius: 10px;
+
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(18px,2vw,30px);
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    transition: box-shadow cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.small-button{
+    padding: clamp(5px, 1.5vw, 15px) clamp(10px, 1.75vw, 35px);
+
+    border: 2px solid;
+
+    border-radius: 10px;
+
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px,1.5vw,25px);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: box-shadow cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.kid-button{
+    padding: clamp(1px, 0.75vw, 13px) clamp(8px, 1, 30px);
+
+    border: 2px solid;
+
+    border-radius: 10px;
+
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px,1vw,20px);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: box-shadow cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.button.text-marron, .small-button.text-marron, .kid-button.text-marron{
+    background: var(--white);
+    border-color: var(--marron);
+    box-shadow: 5px 5px 0px var(--marron);
+}
+
+.button.text-orange, .small-button.text-orange, .kid-button.text-orange{
+    background: var(--white);
+    border-color: var(--orange);
+    box-shadow: 5px 5px 0px var(--orange);
+}
+
+.button.text-beige, .small-button.text-beige, .kid-button.text-beige {
+    background: var(--marron);
+    border-color: var(--beige);
+    box-shadow: 5px 5px 0px var(--beige);
+}
+
+.button.text-vert, .small-button.text-vert, .kid-button.text-vert {
+    background: var(--dark_green);
+    border-color: var(--green);
+    box-shadow: 5px 5px 0px var(--green);
+}
+
+.button.text-vert-f, .small-button.text-vert-f {
+    background: var(--white);
+    border-color: var(--dark_green);
+    box-shadow: 5px 5px 0px var(--dark_green);
+}
+
+.button.text-bleu, .small-button.text-bleu {
+    background: var(--dark_blue);
+    border-color: var(--light_blue);
+    box-shadow: 5px 5px 0px var(--light_blue);
+}
+
+.button.text-bleu-f, .small-button.text-bleu-f {
+    background: var(--white);
+    border-color: var(--dark_blue);
+    box-shadow: 5px 5px 0px var(--dark_blue);
+}
+
+.button.text-blanc, .small-button.text-blanc {
+    background: var(--white);
+    border-color: var(--marron);
+    box-shadow: 5px 5px 0px var(--marron);
+}
+
+.button.text-noir, .small-button.text-noir {
+    background: var(--white);
+    border-color: var(--black);
+    box-shadow: 5px 5px 0px var(--black);
+}
+
+.button:hover, .small-button:hover{
+    box-shadow: 8px 8px 0px;
+}
+
+.button:active, .small-button:active{
+    box-shadow: 4px 4px 0px;
+}
+/**************************************************/
+
+.bande {
+    width: 100%;
+    height: 6.9vw;
+}

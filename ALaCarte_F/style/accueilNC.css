@@ -1,0 +1,94 @@
+
+
+header.bloc{
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#titres{
+    text-align: center;
+}
+
+#nomSite{
+    font-family: 'Lobster Two', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#bloc-presentation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-evenly;
+}
+
+#bloc-presentation div{
+    text-align: center;
+}
+
+#carte-preview{
+    width: 500px;
+    height: 600px;
+
+    
+}
+
+#carte-preview img{
+    width: 100%;
+    border-radius: 20px;
+    border-color: var(--marron);
+    box-shadow: 5px 5px 0px var(--marron);
+}
+
+#bloc-presentation div:first-child{
+    width: 40%;
+    height: fit-content;
+    z-index: 2000;
+}
+
+#ss-bloc-solitaire>div,
+#ss-bloc-plusieurs>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ss-bloc-plusieurs>div {
+    flex-direction: row-reverse;
+}
+
+#ss-bloc-solitaire p,
+#ss-bloc-plusieurs p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#ss-bloc-solitaire>div div,
+#ss-bloc-plusieurs>div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ss-bloc-solitaire>div div {
+    width: 50%;
+}
+
+#ss-bloc-plusieurs>div div {
+    width: 40%;
+}
+
+#ss-bloc-solitaire {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#ss-bloc-plusieurs {
+    margin-top: 5%;
+    text-align: center;
+}
+
+#ss-bloc-solitaire img, #ss-bloc-plusieurs img {
+    width: clamp(300px,50vw,500px);
+}
